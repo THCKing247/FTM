@@ -1,0 +1,13 @@
+{
+  "name": "football-team-management-app",
+  "version": "1.0.0",
+  "description": "Football team management app (React + Supabase)",
+  "scripts": {
+    "install": "cd client && npm install",
+    "start": "cd client && npm start",
+    "build": "cd client && npm run build"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0"
+  }
+}

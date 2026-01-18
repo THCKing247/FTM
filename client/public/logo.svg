@@ -1,0 +1,32 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Red square outline -->
+  <rect x="30" y="30" width="240" height="240" fill="none" stroke="#DC2626" stroke-width="5" rx="6"/>
+  
+  <!-- Window graphic - left pane open, extending beyond square -->
+  <!-- Left pane (open, extending beyond square) -->
+  <rect x="15" y="75" width="75" height="120" fill="#DC2626" rx="3"/>
+  <!-- Vertical mullion on left pane -->
+  <line x1="52.5" y1="75" x2="52.5" y2="195" stroke="#FFFFFF" stroke-width="3"/>
+  <!-- Horizontal mullions on left pane -->
+  <line x1="15" y1="112.5" x2="90" y2="112.5" stroke="#FFFFFF" stroke-width="3"/>
+  <line x1="15" y1="157.5" x2="90" y2="157.5" stroke="#FFFFFF" stroke-width="3"/>
+  <!-- Window handle on left pane -->
+  <rect x="22" y="130" width="12" height="3" fill="#FFFFFF" rx="1.5"/>
+  
+  <!-- Right pane (closed, inside square) -->
+  <rect x="105" y="75" width="75" height="120" fill="#DC2626" rx="3"/>
+  <!-- Vertical mullion on right pane -->
+  <line x1="142.5" y1="75" x2="142.5" y2="195" stroke="#FFFFFF" stroke-width="3"/>
+  <!-- Horizontal mullions on right pane -->
+  <line x1="105" y1="112.5" x2="180" y2="112.5" stroke="#FFFFFF" stroke-width="3"/>
+  <line x1="105" y1="157.5" x2="180" y2="157.5" stroke="#FFFFFF" stroke-width="3"/>
+  
+  <!-- Text: MENLO (centered in square, below window) -->
+  <text x="150" y="232" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle" opacity="0.85">MENLO</text>
+  
+  <!-- Text: ATHERTON (centered in square, below MENLO) -->
+  <text x="150" y="258" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle" opacity="0.85">ATHERTON</text>
+  
+  <!-- Text: GLASS (below square, centered) -->
+  <text x="150" y="285" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle" opacity="0.85">GLASS</text>
+</svg>

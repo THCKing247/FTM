@@ -1,0 +1,135 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.h1 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.muted {
+  color: rgba(232, 234, 240, 0.72);
+  font-size: 13px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 12px;
+}
+
+.col-6 { grid-column: span 6; }
+.col-12 { grid-column: span 12; }
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.input {
+  background: rgba(255, 255, 255, 0.06);
+  color: #e8eaf0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+  min-width: 220px;
+}
+
+.select { min-width: 240px; }
+
+.btn {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+  color: #e8eaf0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover { background: rgba(255, 255, 255, 0.12); }
+
+.btn-primary {
+  background: rgba(76, 201, 240, 0.18);
+  border-color: rgba(76, 201, 240, 0.28);
+}
+
+.btn-danger {
+  background: rgba(247, 37, 133, 0.14);
+  border-color: rgba(247, 37, 133, 0.22);
+}
+
+.alert {
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.alert-error { border-color: rgba(247, 37, 133, 0.35); background: rgba(247, 37, 133, 0.10); }
+.alert-success { border-color: rgba(76, 201, 240, 0.35); background: rgba(76, 201, 240, 0.10); }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pill {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(232, 234, 240, 0.92);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.pill.good { border-color: rgba(76, 201, 240, 0.25); background: rgba(76, 201, 240, 0.12); }
+.pill.bad { border-color: rgba(247, 37, 133, 0.25); background: rgba(247, 37, 133, 0.12); }
+
+.link {
+  color: #e8eaf0;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(232, 234, 240, 0.35);
+}
+
+.link:hover { border-bottom-color: rgba(232, 234, 240, 0.7); }
+
+.split {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
