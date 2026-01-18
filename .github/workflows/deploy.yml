@@ -37,8 +37,8 @@ jobs:
         working-directory: ./client
         run: npm run build
         env:
-          REACT_APP_SUPABASE_URL: ${{ secrets.REACT_APP_SUPABASE_URL }}
-          REACT_APP_SUPABASE_ANON_KEY: ${{ secrets.REACT_APP_SUPABASE_ANON_KEY }}
+          REACT_APP_SUPABASE_URL: ${{ secrets.REACT_APP_SUPABASE_URL || 'https://szbtvgkcmatvnioaucun.supabase.co' }}
+          REACT_APP_SUPABASE_ANON_KEY: ${{ secrets.REACT_APP_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN6YnR2Z2tjbWF0dm5pb2F1Y3VuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg2OTM5MTksImV4cCI6MjA4NDI2OTkxOX0.VlDkzveBSodqHg0IYMK_9me1QmTG1fZUTJizPNh0NZk' }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
