@@ -10,6 +10,16 @@ export async function listMyTeams() {
 }
 
 export async function createTeam(payload) {
+  // Ensure we have a logged-in user; teams.created_by is NOT NULL in the DB.
+  const {
+    data: { user },
+    error: userError,
+  } = await supabase.auth.getUser();
+  if (userError) throw userError;
+  if (!user?.id) {
+    throw new Error('You must be logged in to create a team.');
+  }
+
   const { data, error } = await supabase
     .from('teams')
     .insert([
@@ -18,6 +28,7 @@ export async function createTeam(payload) {
         city: payload.city,
         mascot: payload.mascot,
         season_year: payload.season_year,
+        created_by: user.id,
       },
     ])
     .select('id, name, city, mascot, season_year, created_at')
